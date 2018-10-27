@@ -1,8 +1,9 @@
 # Modify Json Key using JsonPaths
 
-go run modify_json.go <Key> <Value> <Type> <filename> 
+go run modify_json.go \<Key\> \<Value\> \<Type\> \<filename\> 
 
 $ go run modify_json.go id 9 STRING example.json
+
 $ cat output.json 
 
 {"item":{
