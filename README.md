@@ -1,4 +1,6 @@
-# Modify Json Key using JsonPaths
+# Modify Json Key using JsonPaths (SJSON)
+
+go get github.com/tidwall/sjson(package need to imported)
 
 go run modify_json.go \<Key\> \<Value\> \<Type\> \<filename\> 
 
