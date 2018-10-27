@@ -2,6 +2,8 @@
 
 go run modify_json.go \<Key\> \<Value\> \<Type\> \<filename\> 
 
+Type =STRING,NUMBER,BOOL,NULL
+
 $ go run modify_json.go id 9 STRING example.json
 
 $ cat output.json 
