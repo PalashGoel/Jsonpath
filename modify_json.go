@@ -1,7 +1,6 @@
 package main
 
 import (
-//        "bufio"
         "encoding/json"
         "flag"
         "fmt"
@@ -11,7 +10,6 @@ import (
         "regexp"
         "github.com/tidwall/sjson"
         "strconv"
-//`	"errors"
 )
 
 var paths []string
@@ -21,7 +19,6 @@ func printPaths(v interface{}, key, path string) {
                 for mk, mv := range v {
                         p := path + "." + mk
                         if mk == key {
-                                //fmt.Println(p)
                                 paths=append(paths,p)
                         }
                         printPaths(mv, key, p)
@@ -90,6 +87,7 @@ func main(){
         key := os.Args[1]
         modifiedValue := os.Args[2]
         typeOfValue := os.Args[3]
+	typeOfVlaue = strings.ToUpper(typeOfValue)
         filename := os.Args[4]
         dat, err := ioutil.ReadFile(filename)
         check(err)
