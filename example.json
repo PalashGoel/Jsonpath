@@ -1,11 +1,7 @@
-# JsonPath
-
-$ go run jsonpath.go id 9 STRING example.json
-$ cat output.json 
 {"item":{
   "users": [
     {
-      "id": "9",
+      "id": 0,
       "name": "Adam Carter",
       "work": "Unilogic",
       "email": "adam.carter@unilogic.com",
@@ -15,7 +11,7 @@ $ cat output.json
       "optedin": true
     },
     {
-      "id": "9",
+      "id": 1,
       "name": "Leanne Brier",
       "work": "Connic",
       "email": "leanne.brier@connic.org",
@@ -37,4 +33,3 @@ $ cat output.json
   "price": "$59,395"
 }
 }
-
